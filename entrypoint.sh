@@ -7,6 +7,10 @@ cd contracts/build
 cmake ..
 make
 
+# Install node dependencies
+echo 'Installing dependencies contracts ...'
+npm install
+
 # Run Hydra tests
 echo 'Testing contracts ...'
 cd ../..
