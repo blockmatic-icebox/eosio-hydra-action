@@ -1,0 +1,7 @@
+
+name: 'Hydra Tests'
+description: 'Runs hydra tests on your project'
+author: 'Blockmatic.io'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
