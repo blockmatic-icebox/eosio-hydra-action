@@ -21,7 +21,7 @@ on:
     tags:
       - "**"
 
-name: "Smart Contract Tests"
+name: "Smart Contracts Tests"
 
 jobs:
   test:
