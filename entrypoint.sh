@@ -1,2 +1,2 @@
 #!/bin/sh -l
-sh -c "cd /github/workspace && hydra test"
+sh -c "hydra test"
