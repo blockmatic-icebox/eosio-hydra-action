@@ -58,27 +58,27 @@ For more information, see the [Docker Docs: Docker run reference](https://docs.d
 Instead of using the latest pre-built Docker image, you can also specify a Docker image tag (which corresponds to the tags [released on GitHub](https://github.com/blockmatic/eosio-hydra-action/releases)):
 
 ```diff
- on:
-   pull_request:
-   push:
-     branches:
-       - master
-     tags:
-       - "**"
+name: Hydra Tests
 
- name: "Contract tests"
+on:
+  pull_request:
+  push:
+    branches:
+      - master
+    tags:
+      - "**"
 
- jobs:
-   test:
-     name: test
+jobs:
+  test:
+    name: test
 
-     runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
 
-     steps:
-       - name: "Checkout"
-         uses: actions/checkout@master
+    steps:
+      - name: "Checkout"
+        uses: actions/checkout@master
 
-       - name: "Run hydra test"
+      - name: "Run hydra test"
 -        uses: docker://blockmatic/eosio-hydra-action:latest
 +        uses: docker://blockmatic/eosio-hydra-action:1.2.3
 ```
