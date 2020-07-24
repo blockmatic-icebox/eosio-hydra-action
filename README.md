@@ -15,6 +15,8 @@ mv myproject contracts
 hydra init
 ```
 
+The contracts are automatically compiled using `cmake v3.10`, `eosio.cdt v1.7.0` on `ubuntu v18.04`
+
 ## Usage
 
 Define a workflow in `.github/workflows/my-workflow.yml` (or add a job if you already have defined workflows).
@@ -59,7 +61,7 @@ As Docker images are automatically built and pushed on a merge to `master` or wh
 :bulb: The Docker image can also be executed directly by running
 
 ```
-$ docker run --interactive --rm --tty --workdir=/app --volume ${PWD}:/app blockmatic/eosio-hydra-action:latest
+$ docker run --interactive --rm --tty --workdir=/app --volume ${PWD}:/app -e HYDRA_AUTH=$(cat ~/.hydra/auth.json) blockmatic/eosio-hydra-action:latest
 ```
 
 For more information, see the [Docker Docs: Docker run reference](https://docs.docker.com/engine/reference/run/).
