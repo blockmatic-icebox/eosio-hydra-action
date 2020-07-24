@@ -46,6 +46,8 @@ jobs:
 
       - name: "Run hydra test"
         uses: docker://blockmatic/eosio-hydra-action:latest
+        env: 
+          HYDRA_AUTH: ${{ secrets.HYDRA_AUTH }}
 ```
 
 Running the interactive `hydra login` command is not an option on most CI servers. Instead, we recommend running hydra login locally and passing the resulting JSON authentication payload as a secure environment variable to the CI server.
@@ -92,6 +94,8 @@ jobs:
       - name: "Run hydra test"
 -        uses: docker://blockmatic/eosio-hydra-action:latest
 +        uses: docker://blockmatic/eosio-hydra-action:1.2.3
+         env: 
+           HYDRA_AUTH: ${{ secrets.HYDRA_AUTH }}
 ```
 
 ## Contributing
