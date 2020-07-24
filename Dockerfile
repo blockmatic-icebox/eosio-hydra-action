@@ -1,10 +1,10 @@
-FROM node:14.5-alpine
+FROM node:latest
 
-LABEL "repository"="https://github.com/blockmatic/public-repo-template"
-LABEL "homepage"="https://github.com/blockmatic/public-repo-template"
+LABEL "repository"="https://github.com/blockmatic/eosio-hydra-action"
+LABEL "homepage"="https://github.com/blockmatic/eosio-hydra-action"
 LABEL "maintainer"="blockmatic.io"
 
-RUN yarn global add --ignore-optional @klevoya/hydra
+RUN npm i -g @klevoya/hydra
 
 ADD entrypoint.sh /entrypoint.sh
 
