@@ -66,11 +66,11 @@ Instead of using the latest pre-built Docker image, you can also specify a Docke
      tags:
        - "**"
 
- name: "Continuous Integration"
+ name: "Contract tests"
 
  jobs:
-   github-action-template:
-     name: github-action-template
+   test:
+     name: test
 
      runs-on: ubuntu-latest
 
@@ -78,7 +78,7 @@ Instead of using the latest pre-built Docker image, you can also specify a Docke
        - name: "Checkout"
          uses: actions/checkout@master
 
-       - name: "Run action"
+       - name: "Run hydra test"
 -        uses: docker://blockmatic/eosio-hydra-action:latest
 +        uses: docker://blockmatic/eosio-hydra-action:1.2.3
 ```
