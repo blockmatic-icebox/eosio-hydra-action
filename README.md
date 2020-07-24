@@ -4,7 +4,16 @@ Github action for smart contracts automated testing with Hydra.
 
 ## What does this action do?
 
-This action will execute `hydra test` on your project's root directory.
+This action will compile your contracts and execute `hydra test` on your project's root directory.
+
+*Run the following commands to initialize your repo, this github action expects the generated structure.*
+
+```
+mkdir myproject && cd myproject
+eosio init -project myproject
+mv myproject contracts
+hydra init
+```
 
 ## Usage
 
