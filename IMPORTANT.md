@@ -1,6 +1,6 @@
 # Important Notice
 
-We (blockmatic.io and its affiliates) make available Telos DreamStack and other software, updates, patches and documentation (collectively, Software) on a voluntary basis as a member of the EOSIO community. A condition of you accessing any Software, websites, articles, media, publications, documents or other material (collectively, Material) is your acceptance of the terms of this important notice.
+We (blockmatic.io and its affiliates) make available EOSIO Hydra Action and other software, updates, patches and documentation (collectively, Software) on a voluntary basis as a member of the EOSIO community. A condition of you accessing any Software, websites, articles, media, publications, documents or other material (collectively, Material) is your acceptance of the terms of this important notice.
 
 ## Software
 
