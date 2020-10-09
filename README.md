@@ -52,7 +52,7 @@ jobs:
 
 Running the interactive `hydra login` command is not an option on most CI servers. Instead, we recommend running hydra login locally and passing the resulting JSON authentication payload as a secure environment variable to the CI server.
 
-The JSON authentication payload can be found in the `~/.hydra/auth.jso`n file after login. It can then be passed as the `HYDRA_AUTH` environment variable to the CI server. The authentication info automatically renews expired authentication tokens as it includes a refresh token, therefore this setup only needs to be done once.
+The JSON authentication payload can be found in the `~/.hydra/auth.json` file after login. It can then be passed as the `HYDRA_AUTH` environment variable to the CI server. The authentication info automatically renews expired authentication tokens as it includes a refresh token, therefore this setup only needs to be done once.
 
 :bulb: Read more about [Creating and storing encrypted secrets](https://docs.github.com/en/actions/configuring-and-managing-workflows/creating-and-storing-encrypted-secrets).
 
