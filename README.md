@@ -1,12 +1,12 @@
 # Hydra Tests Github Action
 
-Github action for smart contracts automated testing with Hydra. 
+Github action for smart contracts automated testing with Hydra.
 
 ## What does this action do?
 
 This action will compile your contracts and execute `hydra test` on your project's root directory.
 
-*Run the following commands to initialize your repo, this github action expects the generated structure.*
+_Run the following commands to initialize your repo, this github action expects the generated structure._
 
 ```
 mkdir myproject && cd myproject
@@ -46,7 +46,7 @@ jobs:
 
       - name: "Run hydra test"
         uses: docker://blockmatic/eosio-hydra-action:latest
-        env: 
+        env:
           HYDRA_AUTH: ${{ secrets.HYDRA_AUTH }}
 ```
 
@@ -94,21 +94,13 @@ jobs:
       - name: "Run hydra test"
 -        uses: docker://blockmatic/eosio-hydra-action:latest
 +        uses: docker://blockmatic/eosio-hydra-action:1.2.3
-         env: 
+         env:
            HYDRA_AUTH: ${{ secrets.HYDRA_AUTH }}
 ```
 
 ## Contributing
 
-[Contributing Guide](./CONTRIBUTING.md)
-
-[Code of Conduct](./CONTRIBUTING.md#conduct)
-
-## Important
-
-See [LICENSE](./LICENSE) for copyright and license terms.
-
-All repositories and other materials are provided subject to the terms of this [IMPORTANT](./IMPORTANT.md) notice and you must familiarize yourself with its terms. The notice contains important information, limitations and restrictions relating to our software, publications, trademarks, third-party resources, and forward-looking statements. By accessing any of our repositories and other materials, you accept and agree to the terms of the notice.
+Read the [contributing guidelines](https://developers.blockmatic.io/open-source/contributing-guidelines) for details.
 
 ## Blockmatic
 
@@ -129,15 +121,15 @@ Blockmatic is building a robust ecosystem of people and tools for the developmen
 
 <!-- icons with padding -->
 
-[1.1]: http://i.imgur.com/tXSoThF.png 'twitter icon with padding'
-[2.1]: http://i.imgur.com/P3YfQoD.png 'facebook icon with padding'
-[3.1]: http://i.imgur.com/0o48UoR.png 'github icon with padding'
+[1.1]: http://i.imgur.com/tXSoThF.png "twitter icon with padding"
+[2.1]: http://i.imgur.com/P3YfQoD.png "facebook icon with padding"
+[3.1]: http://i.imgur.com/0o48UoR.png "github icon with padding"
 
 <!-- icons without padding -->
 
-[1.2]: http://i.imgur.com/wWzX9uB.png 'twitter icon without padding'
-[2.2]: http://i.imgur.com/fep1WsG.png 'facebook icon without padding'
-[3.2]: http://i.imgur.com/9I6NRUm.png 'github icon without padding'
+[1.2]: http://i.imgur.com/wWzX9uB.png "twitter icon without padding"
+[2.2]: http://i.imgur.com/fep1WsG.png "facebook icon without padding"
+[3.2]: http://i.imgur.com/9I6NRUm.png "github icon without padding"
 
 <!-- links to your social media accounts -->
 <!-- update these accordingly -->
